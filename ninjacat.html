@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ninja Cat!</title>
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#toggle0").click(function(){
+            $(this).find('img').toggle();
+        })
+        $("#toggle1").click(function(){
+            $(this).find('img').toggle();
+        })
+        $("#toggle2").click(function(){
+            $(this).find('img').toggle();
+        })
+        $("#toggle3").click(function(){
+            $(this).find('img').toggle();
+        })
+        $("#toggle4").click(function(){
+            $(this).find('img').toggle();
+        })
+        $('img').click(function(){
+            console.log('data-alt-src value is'), $(this).attr('data-alt-src');
+        })
+    })
+    </script>
+</head>
+<body>
+    <div id="toggle0">
+        <img id="ninja0" src="ninja0.png" data-alt-src='ninja0.png' alt="ninja0">
+        <img id="cat0" src="cat0.png" data-alt-src='cat0.png' alt="cat0" style="display: none"/>
+    </div>
+    <div id="toggle1">
+        <img id="ninja1" src="ninja1.png" data-alt-src='ninja1.png' alt="ninja1">
+        <img id="cat1" src="cat1.png" data-alt-src='cat1.png' alt="cat1" style="display: none"/>
+    </div>
+    <div id="toggle2">
+        <img id="ninja2" src="ninja2.png" data-alt-src='ninja2.png' alt="ninja2">
+        <img id="cat2" src="cat2.png" data-alt-src='cat2.png' alt="cat2" style="display: none"/>
+    </div>
+    <div id="toggle3">
+        <img id="ninja3" src="ninja3.png" data-alt-src='ninja3.png' alt="ninja3">
+        <img id="cat3" src="cat3.png" data-alt-src='cat3.png' alt="cat3" style="display: none"/>
+    </div>
+    <div id="toggle4">
+        <img id="ninja4" src="ninja4.png" data-alt-src='ninja4.png' alt="ninja4">
+        <img id="cat4" src="cat4.png" data-alt-src='cat4.png' alt="cat4" style="display: none"/>
+    </div>
+    </body>
+</html>
